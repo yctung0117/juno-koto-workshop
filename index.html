@@ -13,15 +13,20 @@
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+            background: #fff;
         }
         h1, h2, h3 {
             color: #003366;
+        }
+        p {
+            text-align: justify;
         }
         .info-box {
             background: #f5f7fa;
             border-left: 5px solid #003366;
             padding: 15px 20px;
             margin: 20px 0;
+            line-height: 1.5;
         }
         .agenda {
             margin-top: 30px;
@@ -32,10 +37,24 @@
             padding: 15px 20px;
             margin-bottom: 15px;
             background: #fafafa;
+            transition: all 0.2s ease;
+        }
+        .block:hover {
+            background: #eef4fb;
         }
         .time {
             font-weight: bold;
             color: #0055aa;
+        }
+        .map-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            border: 0;
         }
         footer {
             margin-top: 50px;
@@ -43,6 +62,17 @@
             border-top: 1px solid #ccc;
             font-size: 0.9em;
             color: #666;
+            text-align: center;
+        }
+        .map-link {
+            margin-top: 10px;
+            display: block;
+            font-weight: bold;
+            color: #0055aa;
+            text-decoration: none;
+        }
+        .map-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -51,13 +81,15 @@
 <h1>JUNO / KOTO Joint Workshop @ NKNU</h1>
 
 <p>
-This workshop brings together researchers and students from institutions across Taiwan working on the JUNO and KOTO experiments, with the aim of exchanging recent progress and discussing future plans. The meeting will focus on detector development, data analysis, and instrumentation, and will provide a platform to review current status, address key challenges, and explore opportunities for future collaboration.
+This workshop brings together researchers and students from institutions across Taiwan working on the JUNO and KOTO experiments. 
+The goal is to exchange recent progress, review current challenges, and explore opportunities for long-term collaboration. 
+Topics include detector development, data analysis, and instrumentation, providing a platform to strengthen connections among domestic research teams and foster future joint research efforts.
 </p>
 
 <div class="info-box">
     <p><b>Date:</b> February 10, 2026</p>
     <p><b>Time:</b> 13:30 – 17:00</p>
-    <p><b>Venue:</b> 4F, Educational Resources Room (利用教育室), Library, NKNU Heping Campus </p>
+    <p><b>Venue:</b> 4F, Educational Resources Room (利用教育室), Library, Heping Campus, NKNU</p>
 </div>
 
 <h2>Agenda (Tentative)</h2>
@@ -79,7 +111,7 @@ This workshop brings together researchers and students from institutions across 
     <div class="block">
         <div class="time">14:20 – 15:00</div>
         <div><b>Session 2: KOTO / KOTO II Status</b></div>
-        <div>Detector status, DAQ, and physics progress</div>
+        <div>Detector status, DAQ systems, and physics progress</div>
     </div>
 
     <div class="block">
@@ -106,10 +138,20 @@ This workshop brings together researchers and students from institutions across 
 
 </div>
 
+<h2>Location Map</h2>
+<div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5646332982876!2d120.30388841486442!3d22.62677588513621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e051f4e0ec991%3A0x8c3f1a0a569cbb86!2sNational%20Kaohsiung%20Normal%20University%20Heping%20Campus!5e0!3m2!1sen!2stw!4v1705689901234!5m2!1sen!2stw" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+    <a class="map-link" href="https://goo.gl/maps/XYZ123" target="_blank">
+        Open in Google Maps
+    </a>
+</div>
+
 <footer>
-    <p>
-        Organized by NKNU 
-    </p>
+    <p>Organized by National Kaohsiung Normal University (NKNU)</p>
 </footer>
 
 </body>
